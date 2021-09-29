@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7.0.7/swiper-bundle.min.css">
+    <title>Marijuana Flowers.</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7.0.7/swiper-bundle.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                spaceBetween: 2,
+                centeredSlides: true,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+            });
+        });
+
+    </script>
+    <style>
+        body{
+            margin: 0px;
+            font-family: sans-serif;
+        }
+        #contenido{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background: rgb(22, 30, 43);
+            display: flex;
+            flex-direction: column;
+        }
+        #menu{
+            width:calc(100% -  10px);
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding-right: 10px;
+            justify-content: flex-end;
+        }
+        #botonMenuItem{
+            width: 40px;
+            height: 30px;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            
+        }
+       
+        .botonMenuItem{
+            width: 30px;
+            height: 5px;
+            background: rgb(44, 236, 147);;
+            margin-bottom: 8px;
+            border-radius: 10px;
+            
+        }
+        #titleSub{
+            width: calc(100% - 60px);
+            height: 100px;
+            padding-left: 30px;
+            padding-right: 30px;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            font-size: 40px;
+            color:white;
+            font-weight: 100;;
+        }
+        #simpleSubMenu{
+            width: 100%;
+            height: 50px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+            align-items: center;
+            
+        }
+        .simpleSubMenuItem{
+            flex: 1;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color:rgb(97, 150, 125);
+            
+        }
+        .simpleSubMenuItem:active{
+            color:rgb(96, 201, 152);
+            -webkit-transition: all .5s ease;;
+            -webkit-user-select: none;
+            
+        }
+        #scroll{
+            flex: 1;
+            width: 100%;;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .scrollContente{
+
+            width: 100%;
+            height: 90%;
+
+
+            background:rgba(255, 255, 255, 0);
+        }
+        .swiper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background:rgba(255, 255, 255, 0);
+        }
+        .swiper-slide{
+
+            width: 240px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .swiperItemRod{
+            width: 200px;
+            height: 450px;
+            overflow: hidden;
+            border-radius: 300px;
+            position: relative;
+        }
+        .swiperItemRodIcon{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiperItemRodIconImage{
+            width: 170px;
+            height: 170px;
+            
+            border-radius: 50%;;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.397);
+        }
+        .swiperItemUb{
+            width: calc(100% - 30px);
+            color:rgb(41, 124, 85);
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 20px;
+            
+        }
+        .swiperitemName{
+            width: calc(100% - 30px);
+            padding-left: 30px;
+            font-size: 23px;
+            color:white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .pre{
+            width: calc(100% - 30px);
+            padding-left: 30px;
+            font-size: 13px;
+            color:rgb(35, 128, 92);
+            font-size: 20px;
+        }
+        .shopItemRod{
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background:rgba(255, 255, 255, 0.301);
+            right: 10px;
+            top: 120px;
+            border-radius: 50%;
+            backdrop-filter: blur(10px);;
+            background-image: url('https://cdn0.iconfinder.com/data/icons/business-finance-213/64/cart-stroller-pushcart-buy-512.png');
+            background-size: 60px;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);;
+            -webkit-transition: all .5s ease;;
+            
+        }
+        .shopItemRod:active{
+            transform: scale(1.1);
+            -webkit-transition: all .5s ease;;
+        }
+        .r1{
+            background:rgb(167, 223, 172);
+            box-shadow: 0px 0px 5px rgb(152, 248, 160), 0px 0px 10px rgb(152, 248, 160);
+        }
+        .r1 .swiperItemRodIconImage{
+            background: rgba(67, 185, 106, 0.459);;
+            background-image: url(https://g.foolcdn.com/editorial/images/515954/marijuana-flower-cannabis-pot-weed-legal-canada-plant-medical-recreational-getty.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .r2{
+            background:rgb(167, 223, 216);
+            box-shadow: 0px 0px 10px rgb(167, 223, 216), 0px 0px 5px rgb(167, 223, 216);;
+        }
+        .r2 .swiperItemRodIconImage{
+           
+            background: rgba(67, 161, 185, 0.459);;
+            background-image: url( https://ak.picdn.net/shutterstock/videos/8676781/thumb/4.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .r3{
+
+            background:rgb(167, 207, 223);
+            box-shadow: 0px 0px 10px rgb(167, 207, 223), 0px 0px 5px rgb(167, 207, 223);;;
+            
+        }
+
+        .r3 .swiperItemRodIconImage{
+            background: rgba(67, 114, 185, 0.459);;
+            background: rgba(67, 161, 185, 0.459);;
+            background-image: url(  https://cl.buscafs.com/www.qore.com/public/uploads/images/48280.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="contenido">
+
+        <div id="menu">
+            <div id="botonMenu">
+
+                <div id="botonMenu">
+
+                    <div class="botonMenuItem"></div>
+                    <div class="botonMenuItem"></div>
+                </div>
+            </div>
+
+            
+        </div>
+        <div id="titleSub"><div>Marijuana <br/> Flowers.</div></div>
+        
+        <div id="simpleSubMenu">
+
+            <div class="simpleSubMenuItem">
+                Flowers
+            </div>
+            <div class="simpleSubMenuItem">
+                Seeds
+            </div>
+            <div class="simpleSubMenuItem">
+                Hibridos
+            </div>
+        </div>
+
+        <div id="scroll">
+
+            <div class="scrollContente">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide">
+
+                        <div class="swiperItemRod r1" >
+
+                            <div class="shopItemRod"></div>
+                            <div class="swiperItemRodIcon">
+                                <div class="swiperItemRodIconImage"></div>
+                            </div>
+                            <div class="swiperItemUb">
+                                Alaskan
+                            </div>
+                            <div class="swiperitemName">
+                                Thundergunck<br/>
+                                Strain
+                            </div>
+
+                            <div class="pre">
+                                1 Oz / $ 300
+                            </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="swiper-slide">
+
+                        <div class="swiperItemRod r2">
+                            <div class="shopItemRod"></div>
+                            <div class="swiperItemRodIcon">
+                                <div class="swiperItemRodIconImage"></div>
+                            </div>
+                            <div class="swiperItemUb">
+                                Tahole
+                            </div>
+                            <div class="swiperitemName">
+                                OG KONG<br/>
+                                Strain
+                            </div>
+
+                            <div class="pre">
+                                1 Oz / $ 200
+                            </div>
+                        </div>
+
+                      </div>
+
+                      <div class="swiper-slide">
+
+                        <div class="swiperItemRod r3">
+                            <div class="shopItemRod"></div>
+                            <div class="swiperItemRodIcon">
+                                <div class="swiperItemRodIconImage"></div>
+                            </div>
+                            <div class="swiperItemUb">
+                                Oaxaca
+                            </div>
+                            <div class="swiperitemName">
+                                Ak 17<br/>
+                                Strain
+                            </div>
+
+                            <div class="pre">
+                                1 Oz / $ 600
+                            </div>
+                        </div>
+                        
+
+                      </div>
+
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
